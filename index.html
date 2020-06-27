@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div>
+            <input id="getNumber" class="input-value" type="text">
+        </div>
+        <div>
+            <button class="all-clear" onclick="clearAll()">AC</button>
+            <button class="one-clear" onclick="clearOne()">C</button>
+            <button class="btn" onclick="sqrNum()">x<sup>2</sup></button>
+            <button class="btn" onclick="getValue('/')">/</button>
+
+        </div>
+        <div>
+            <button class="btn" onclick="getValue('7')">7</button>
+            <button class="btn" onclick="getValue('8')">8</button>
+            <button class="btn" onclick="getValue('9')">9</button>
+            <button class="btn" onclick="getValue('*')">x</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getValue('4')">4</button>
+            <button class="btn" onclick="getValue('5')">5</button>
+            <button class="btn" onclick="getValue('6')">6</button>
+            <button class="btn" onclick="getValue('-')">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getValue('1')">1</button>
+            <button class="btn" onclick="getValue('2')">2</button>
+            <button class="btn" onclick="getValue('3')">3</button>
+            <button class="btn" onclick="getValue('+')">+</button>
+        </div>
+        <div>
+            <button style="visibility: hidden;"></button>
+            <button class="btn" onclick="getValue('0')">0</button>
+            <button style="visibility: hidden;"></button>
+            <button class="result" onclick="getResult()">=</button>
+        </div>
+    </main>
+
+ 
+
+</body>
+<script src="app.js"></script>
+</html>
